@@ -1,0 +1,403 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	
+	background-image: url(Images/back9.jpg);
+}
+.navbar{
+	width:  86%;
+	height: 15px;
+	background: #a57d55;
+	line-height: 15px;
+	margin: auto;
+	padding: 38px 110px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 10;
+	position: fixed;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 23px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: Helvetica;
+	text-transform: uppercase;
+	padding-top: 2px;
+}
+.navbar ul li img{
+	width: 110%;
+	height: 180%;
+	padding-top: 5px;
+	cursor: pointer;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #fff ;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+
+/*----------All Products-------*/
+.row-row-2 h2{
+	font-size: 28;
+	position: relative;	
+}
+.row-row-2 h2::after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: -8;
+	left: 46%;
+}
+.drop{
+	padding-left: 100%;
+}
+.table{
+	align-items: center;
+}
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-spacing: 200pt;
+}
+.con .card{
+	width: 100%;
+	background: #BC9E80;
+	height: 400px;
+}
+.col-4{
+	flex-basis: 25%;
+	padding: 25px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-4 h4{
+	font-size: 16px;
+	color: #fff;
+}
+.col-4 p{
+	font-size: 16px;
+	color: #fff;
+}
+.col-4 img{
+	width: 100%;
+	height: 200px;
+	cursor: pointer;
+}
+.rating .fa{
+	color: #000000
+}
+.buy-btn {
+    background-color:#ff0057;
+    color: #fff;
+    font-size: 16px;
+	font-family: initial;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-family: cursive;
+ }
+ .buy-btn:hover{
+	box-shadow: 3px 3px #fff;
+	transform: translateY(4px);
+ }
+.row-2{
+	justify-content: space-between;
+	margin:100px auto 50px;
+}
+.col-4:hover{
+	transform: translateY(-7px);
+}
+
+select{
+	border: 1px solod #ff523b;
+	padding: 5px;
+} 
+.page-btn{
+	margin: 30 auto 80px;
+}
+.page-btn span{
+	display:inline-block;
+	border: 2px solid #ff523b;
+	margin-left: 10px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.page-btn span:hover{
+	background:  #ff0057;
+	color: #fff;
+}
+.test{
+	padding: 40px 0;
+	background: #EDE9E4;
+	color: #434343;
+	text-align: center;
+}
+.bord{
+	
+	height: 5px;
+	background: 6ab04c;
+	margin: 26px auto;
+}
+.test .inner h1{
+	font-size: 28;
+	position: relative;	
+}
+.test .inner h1::after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: -7;
+	left: 47%;
+}
+.rw{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cl{
+	flex: 33.33%;
+	max-width: 33.33%;
+	box-sizing: border-box;
+	padding: 15px;
+}
+.tes{
+	background: #fff;
+	padding: 30px;
+	align-items: center;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.tes img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.name{
+	font-size: 20px;
+	margin: 20px 0;
+}
+.stars{
+	color: #ff523b;
+	margin-bottom: 20px;
+}
+.tes:hover{
+	transform: translateY(-7px);
+}
+
+footer{
+	position: relative;
+	height: auto;
+	padding: 50px 100px;
+	background: #a57d55;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+footer .containerr{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+footer .containerrr .sec{
+	margin-bottom: 30px;
+}
+footer .containerr .sec.purpose{
+	width: 35%;
+}
+footer .containerr .sec.purpose li a{
+	cursor: pointer;
+}
+footer .containerr .sec.purpose li a:hover{
+	transform: scale(1.5);
+	color: blue;
+}
+footer .containerr h2{
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+footer .containerr h2:before{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 70px;
+	height: 5px;
+	background: #f1f1f1;
+	border-radius: 3px;
+}
+footer .containerr h2:before {
+	width: 15px;
+	height: 5px;
+	background: #fff;
+	border-radius: 3px;
+	position: absolute;
+	top: 30;
+	left: 10px;
+	animation: moving 2s linear infinite;
+}
+@keyframes moving{
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100px;
+	}
+}
+
+footer p{
+	color: #e7d7c1;
+}
+.sci{
+	margin-top: 20px;
+	display: flex;
+}
+.sci li{
+	list-style: none;
+}
+.sci li:hover{
+	color: red;
+}
+.sci li .fab{
+	display: inline-block;
+	width: 40px;
+	height: 40px;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.links{
+	position: relative;
+	width: 30%;
+}
+.links ul li{
+	list-style: none;
+}
+.links ul li *{
+	color: #e7d7c1;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline;
+}
+.links ul li *:hover{
+	color: #fff;
+}
+.contact{
+	width: calc(35% - 60px);
+	margin-right: 0 !important;
+}
+.contact .info{
+	position: relative;
+}
+.contact .info li{
+	display: flex;
+	margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.contact .info li span{
+	color: #e7d7c1;
+}
+.contact .info li *{
+	color: #e7d7c1;	
+	text-decoration: none;
+}
+.contact .info li *:hover{
+	color: #fff;
+}
+.contact .info li span:hover{
+	color: #fff;
+}
+.scan{
+	height: 50%;
+	position: absolute;
+	bottom: 120;
+	right: 120px;
+}
+hr{
+	width: 90%;
+	border: 0;
+	border-bottom: 1px solid #f1f1f1;
+	margin: 10px auto;
+}
+.copy{
+	width: 100%;
+	background: #a57d55;
+	padding: 8px 100px;
+	text-align: center;
+	color: #e7d7c1;
+}
+@media (max-width: 991px){
+	footer{
+		padding: 40px;
+	}
+	footer .containerr{
+		flex-direction: column;
+	}
+	footer .containerr .sec{
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	footer .containerr .sec.purpose,
+	.links,
+	.contact{
+		width: 100%;
+	}
+	footer .containerr .scan{
+		padding: 0 50%;
+		width: 50%;
+	}
+	.copy{
+		padding: 8px 40px;
+	}
+}
+
+@media screen and (max-width:600px){
+	.cl{
+		flex: 100%;
+		max-width: 100%;
+	}
+}
